@@ -1,0 +1,23 @@
+O que é uma API
+API -> application program interface
+// Troca de requisição e reposta a grosso modo define uma API //
+
+Conjunto de regras
+API:
+regra -> 
+
+    cliente(frontend)
+        html
+        css
+
+    servidor(backend)
+        acesso ao bd
+        autenticação
+        envio de e-mail
+        regras de negócio
+
+
+Cliente faz uma requisição (/produto/mouse -> rota) para o servidor e dentro dela
+passa os parametros da pesquisa. Logoo servidor recebe a requisição
+analisa os paramentros e retorna os dados para o cliente
+a reposta vai ser retornada como JSON, formato padrão
