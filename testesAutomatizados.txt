@@ -1,0 +1,10 @@
+TDD -> Testes
+1 - Testes unitários
+    testa funções isoladamente
+
+2 - Testes de integração
+    request -> routes -> controller - repository
+    repository <- controller <- reponse
+
+3 - Ponta a Ponta (E2E)
+    
