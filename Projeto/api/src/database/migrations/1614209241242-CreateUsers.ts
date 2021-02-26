@@ -1,8 +1,12 @@
 import { MigrationInterface, QueryRunner, Table } from "typeorm";
 
+// migration criada utilizando 
+// yarn typeorm migration:create -n CreateUsers
 export class CreateUsers1614209241242 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {
+        // Padrão de criação de tabelas
+        // yarn typeorm migration:run
         await queryRunner.createTable(
             new Table({
                 name: "users",
@@ -30,6 +34,8 @@ export class CreateUsers1614209241242 implements MigrationInterface {
         );
     }
 
+    //Desfaz a migration
+    //yarn typeorm migration:revert
     public async down(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.dropTable("users");
     }
